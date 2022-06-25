@@ -1,11 +1,9 @@
 console.log("Script linked");
 
-var now = moment();
 
 function displayDateTime() {
+    var now = moment();
     $("#current-date-time").text(now);
-
-   
 };
 
-displayDateTime();
+setInterval(displayDateTime, 1000);
